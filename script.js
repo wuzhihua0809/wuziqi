@@ -136,10 +136,6 @@ function drawRect() {
     }
     rollback.onclick = function() {
         var length = stepData.length;
-        if (isWin) {
-            alert("再来一局吧");
-            return;
-        }
         if (length == 0) {
             return;
         }
@@ -161,6 +157,7 @@ function drawRect() {
         stepData.splice( length-1, 1);
         step.innerText = "第"+ (stepData.length) +"步";
         isBlack = !isBlack;
+        isWin = false;
     }
     restart.onclick = function() {
         context.clearRect(0, 0, 450, 450);
