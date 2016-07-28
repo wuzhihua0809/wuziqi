@@ -1,8 +1,14 @@
 canvas {
   display: block;
-  margin: 150px auto 50px;
+  margin: 100px auto 50px;
   background-color: #efefef;
   box-shadow: 2px 2px 2px #efefef, 5px 5px 5px #b9b9b9;
+}
+#step {
+  width: 75px;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
 }
 #rollback {
   width: 75px;
